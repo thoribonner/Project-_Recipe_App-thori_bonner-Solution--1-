@@ -170,7 +170,6 @@ describe("App", () => {
           cancelable: true,
         })
       );
-      console.log(content.queryByText(/Tuna Poke with Mango/))
       expect(content.queryByText(/Tuna Poke with Mango/)).toBeNull();
     });
   });  
