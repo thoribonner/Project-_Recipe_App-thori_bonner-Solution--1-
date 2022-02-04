@@ -1,9 +1,10 @@
 import React from "react";
 
-function EditableRecipe({editingRecipe, handleEditChange}) {
+function EditableRecipe({editingRecipe, handleEditChange, handleUpdate}) {
 
   // * editingRecipe starts in App.js, received from RecipeList.js
   // * handleEditChange starts in App.js, received from RecipeList.js
+  // * handleUpdate starts in App.js, received from RecipeList.js
   
 
   return (
@@ -59,7 +60,7 @@ function EditableRecipe({editingRecipe, handleEditChange}) {
         />
       </td>
       <td>
-        <button type="submit">
+        <button name="update" onClick={handleUpdate}>
           update
         </button>
       </td>
