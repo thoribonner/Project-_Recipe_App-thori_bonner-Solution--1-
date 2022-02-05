@@ -53,6 +53,10 @@ table {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+thead {
+  background-color: #d8e2dc;
+}
+
 .content_td p {
   max-width: 100%;
   max-height: 100px;
@@ -60,59 +64,64 @@ table {
   text-overflow: ellipsis;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #fff0c7;
+.recipe-list table {
+  border-radius: 10px 10px 0 0;
+}
+
+.recipe-list tbody tr:nth-child(odd) {
+  background-color: #d69b89;
+  color: #fff;
 }
 
 /* Column Size for thead */
-thead tr th:nth-child(1) {
-  width: 10%
-}
-
-thead tr th:nth-child(2) {
-  width: 10%
-}
-
-thead tr th:nth-child(3) {
-  width: 10%
-}
-
-thead tr th:nth-child(4) {
-  width: 30%
-}
-
-thead tr th:nth-child(5) {
-  width: 30%
-}
-
+thead tr th:nth-child(1),
+thead tr th:nth-child(2),
+thead tr th:nth-child(3),
 thead tr th:nth-child(6) {
   width: 10%
 }
+
+thead tr th:nth-child(4),
+thead tr th:nth-child(5) {
+  width: 30%
+}
 /* Column size for tbody */
 
-td:nth-child(1) {
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(6) {
   width: 10%
 }
 
-td:nth-child(2) {
-  width:10%
-}
-
-td:nth-child(3) {
-  width:10%
-}
-
-td:nth-child(4) {
-  width: 30%
-}
-
+td:nth-child(4),
 td:nth-child(5) {
   width: 30%
 }
 
-td:nth-child(6) {
-  width: 10%
-}
 img {
   width: 100%;
+}
+
+
+
+#create {
+  background-color: #d8e2dc;
+  border-radius: 0 0 10px 10px;
+}
+
+#create button {
+  background-color: #d69b89;
+  border: #d69b89;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+.recipe-list button {
+  background-color: #d8e2dc;
+  border: #d8e2dc;
+  border-radius: 10px;
+  color: #000;
+  padding: 10px;
 }
