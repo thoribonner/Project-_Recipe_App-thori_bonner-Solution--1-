@@ -27,7 +27,7 @@ function RecipeCreate({addRecipe}) {
   }
 
   return (
-    <form name="create" onSubmit={handleSubmit}>
+    <form id="create" name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
           <tr>

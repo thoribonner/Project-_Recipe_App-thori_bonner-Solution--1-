@@ -125,3 +125,7 @@ img {
   color: #000;
   padding: 10px;
 }
+
+button {
+  width: 100%;
+}
