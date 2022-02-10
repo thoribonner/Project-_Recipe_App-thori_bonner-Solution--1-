@@ -13,7 +13,7 @@
     "@testing-library/user-event": "^7.2.1"
   },
   "scripts": {
-    "prebuild": "react-scripts test",
+    "prebuild": "CI=true react-scripts test --colors",
     "build": "react-scripts build",
     "docker:build": "docker image build . -t thinkful-ed/zid-fe-react-state-management-xx-assignment",
     "docker:run": "docker run --rm -it -p 3000:3000 thinkful-ed/zid-fe-react-state-management-xx-assignment",
@@ -24,7 +24,7 @@
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
     "test:solution": "npm run docker:build && npm run docker:test",
-    "predeploy": "react-scripts build",
+    "predeploy": "npm run build",
     "deploy": "vercel --prod"
   },
   "eslintConfig": {
