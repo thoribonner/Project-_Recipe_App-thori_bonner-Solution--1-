@@ -128,4 +128,9 @@ img {
 
 button {
   width: 100%;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 90%;
 }
