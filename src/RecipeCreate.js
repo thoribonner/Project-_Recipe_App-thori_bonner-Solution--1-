@@ -87,7 +87,7 @@ function RecipeCreate({addRecipe}) {
               />
             </td>
             <td>
-              <button type="submit">Create</button>
+              <button type="submit">create</button>
             </td>
           </tr>
         </tbody>
