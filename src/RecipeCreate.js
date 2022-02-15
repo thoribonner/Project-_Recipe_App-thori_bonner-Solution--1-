@@ -37,7 +37,7 @@ function RecipeCreate({addRecipe}) {
                 name="name"
                 type="text"
                 required={true}
-                value={formData.name}
+                value={fD.name}
                 onChange={handleChange}
                 placeholder="Name"
               />
@@ -48,7 +48,7 @@ function RecipeCreate({addRecipe}) {
                 name="cuisine"
                 type="text"
                 required={true}
-                value={formData.cuisine}
+                value={fD.cuisine}
                 onChange={handleChange}
                 placeholder="Cuisine"
               />
